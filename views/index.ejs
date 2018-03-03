@@ -26,18 +26,27 @@
         <div class="search">
             <h1 style="color: #fff;">Search for a player!</h1>
             <div class="input-group">
-            <input type="text" id="playername" class="form-control" placeholder="Search player..." autofocus>
-            <span class="input-group-btn">
-            <button class="btn btn-purple" type="button" onclick="search()">Search!</button>
+                <input type="text" id="playername" class="form-control" placeholder="Search player..." autofocus>
+                <span class="input-group-btn">
+            <button class="btn btn-purple" type="button" onclick="search()" id="btnsearch">Search!</button>
             </span>
-        </div>
+            </div>
         </div>
     </div>
     <script>
-function search() {
-   document.location.href='./player/' + document.getElementById("playername").value;
-}
-</script>
+        document.getElementById('playername').addEventListener("keyup", function(event) {
+            event.preventDefault();
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                // Trigger the button element with a click
+                document.getElementById("btnsearch").click();
+            }
+        });
+
+        function search() {
+            document.location.href = './player/' + document.getElementById("playername").value;
+        }
+    </script>
 </body>
 
 </html>
