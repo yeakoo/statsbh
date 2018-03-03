@@ -1,0 +1,8 @@
+<% if(player.length < 1){ %>
+    <h1>No player found</h1>
+<% } else { %>
+Name: <%= player[0].name %>
+<p>Total Games: <%= player[0].games %></p>
+<p>Wins: <%= player[0].wins %></p>
+<p>ELOOOOOO: <%= player[0].rating %></p>
+<% } %>

@@ -8,9 +8,9 @@ app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
 
 var indexController = require("./controllers/indexController");
-
+var playerController = require("./controllers/playerController");
 indexController(app);
-
+playerController(app);
 io.on('connection', function(socket) {
     console.log('a user connected');
     socket.on('test', (data) => console.log(data.msg));

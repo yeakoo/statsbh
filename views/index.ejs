@@ -26,13 +26,18 @@
         <div class="search">
             <h1 style="color: #fff;">Search for a player!</h1>
             <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search player..." autofocus>
+            <input type="text" id="playername" class="form-control" placeholder="Search player..." autofocus>
             <span class="input-group-btn">
-            <button class="btn btn-purple" type="button">Search!</button>
+            <button class="btn btn-purple" type="button" onclick="search()">Search!</button>
             </span>
         </div>
         </div>
     </div>
+    <script>
+function search() {
+   document.location.href='./player/' + document.getElementById("playername").value;
+}
+</script>
 </body>
 
 </html>
