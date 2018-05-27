@@ -15,8 +15,8 @@ indexController(app);
 // let playerController = require("./controllers/playerController");
 // playerController(app);
 
-//let leaderboardController = require('./controllers/leaderboardController');
-//leaderboardController(app);
+// let leaderboardController = require('./controllers/leaderboardController');
+// leaderboardController(app);
 
 io.on('connection', function(socket) {
     console.log('a user connected');
