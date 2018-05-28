@@ -84,6 +84,7 @@ p:nth-child(2) {
     background-size: 130px auto;
     background-position: left;
     transition: 0.8s;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,4 +124,31 @@ p:nth-child(2) {
 
 .bounce {
     animation: bounce 1.5s infinite;
+}
+
+.header #player-search {
+    width: 300px;
+    height: 30px;
+    background: #40434E;
+    font-family: sans-serif;
+    border: none;
+    font-size: 10pt;
+    float: right;
+    margin: 9px 40px 0px 0px;
+    color: #fff;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.search .to {
+    position: absolute;
+    z-index: 1;
+    right: 70px;
+    top: 17px;
+    color: #7B7B7B;
+    cursor: pointer;
+    width: 0;
 }

@@ -6,21 +6,25 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="/assets/css/style.less">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" type="text/javascript"></script>
-
 </head>
 
 <body>
     <div class="tiles">
+        <p>Search.</p>
         <p>Compete.</p>
-        <p>Win.</p>
     </div>
-    <div class="header"></div>
+    <div class="header">
+        <div class="search">
+            <i class="fas fa-search to" id="search"></i>
+            <input type="text" id="player-search" placeholder="Search for a player!" />
+        </div>
+    </div>
     <div class="arrow bounce"></div>
+    <script type="text/javascript" src="assets/js/search.js"></script>
 </body>
 
 </html>
